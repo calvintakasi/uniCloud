@@ -1,11 +1,11 @@
-import React from "react";
+
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { Check, Cloud, ShieldCheck, Server, Users, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 // App Component: University Private Cloud Landing Page
-export default function App(): JSX.Element {
+export default function App() {
   const features = [
     {
       title: "Secure Research Storage",
