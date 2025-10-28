@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Private Cloud</title>
+    <style>
+      /* ===== Base Reset ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #f8f9fc;
+        color: #222;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* ===== Header ===== */
+      header {
+        background: #fff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+        color: #0078ff;
+        font-weight: 700;
+      }
+
+      nav a {
+        color: #444;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #0078ff;
+      }
+
+      /* ===== Hero Section ===== */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 100px 20px 80px;
+        background: linear-gradient(180deg, #ffffff, #f1f5ff);
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #0078ff;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        color: #555;
+        max-width: 700px;
+        line-height: 1.6;
+      }
+
+      .hero button {
+        margin-top: 25px;
+        background: #0078ff;
+        color: #fff;
+        border: none;
+        padding: 12px 32px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .hero button:hover {
+        background: #005fcc;
+        transform: translateY(-2px);
+      }
+
+      /* ===== Features Section ===== */
+      .features {
+        padding: 80px 40px;
+        text-align: center;
+        background: #fff;
+      }
+
+      .features h3 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #0078ff;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      .feature-card {
+        background: #f9faff;
+        padding: 30px;
+        border-radius: 16px;
+        border: 1px solid #e0e4f0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-card h4 {
+        color: #0078ff;
+        margin-bottom: 10px;
+      }
+
+      .feature-card p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      /* ===== Resources Section ===== */
+      .resources {
+        padding: 80px 40px;
+        background: #f8f9fc;
+        text-align: center;
+      }
+
+      .resources h3 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #0078ff;
+      }
+
+      .resource-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .resource-links a {
+        background: #0078ff;
+        color: #fff;
+        padding: 14px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.3s;
+      }
+
+      .resource-links a:hover {
+        background: #005fcc;
+        transform: translateY(-3px);
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        text-align: center;
+        padding: 25px;
+        background: #fff;
+        color: #555;
+        font-size: 0.9rem;
+        border-top: 1px solid #e0e4f0;
+      }
+
+      @media (max-width: 600px) {
+        .hero h2 {
+          font-size: 1.8rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UniCloud ☁️ AV</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to the University Private Cloud</h2>
+      <p>
+        A next-generation digital infrastructure for universities — secure,
+        scalable, and optimized for collaboration between students, faculty, and
+        administrators.
+      </p>
+      <button onclick="alert('Backend is active and connected!')">
+        Explore Platform
+      </button>
+    </section>
+
+    <section class="features" id="features">
+      <h3>Key Features</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>🔐 Secure Access</h4>
+          <p>
+            Multi-layered authentication ensures that your academic data remains
+            protected at every level.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h4>💾 Smart Storage</h4>
+          <p>
+            Store, manage, and back up university records with automatic version
+            control and scalability.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h4>🤝 Real-time Collaboration</h4>
+          <p>
+            Enable students and professors to work together seamlessly on shared
+            projects and resources.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <h3>Resources</h3>
+      <div class="resource-links">
+        <a href="#">📘 Documentation</a>
+        <a href="#">💡 API Reference</a>
+        <a href="#">🎓 Student Portal</a>
+        <a href="#">🧠 Knowledge Base</a>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <p>© 2025 University Cloud. All Rights Reserved.</p>
+      <p>Contact: admin@unicloud.edu</p>
+    </footer>
+  </body>
+</html>
